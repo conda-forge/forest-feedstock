@@ -1,5 +1,5 @@
 {% set name = "forest" %}
-{% set version = "0.11.0" %}
+{% set version = "0.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/informatics-lab/forest/archive/v{{ version }}.tar.gz
-  sha256: 311abdff2196c89ab3afdd274a12494e22fda0bb080013c16022a942a6dec766
+  sha256: 7fcc7b32c8c67ff4accd68a4d108118f80e4ff2f2476d1ab04248479e3d2febc
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
-  skip: True  # [py<35]
+  script: {{ PYTHON }} -m pip install . -vv
+  skip: true  # [py<35]
 
 requirements:
   host:
@@ -32,7 +32,7 @@ about:
   license: GPL-3.0
   license_family: GPL
   license_file: LICENSE
-  summary: 'Forecast and observation research and evaluation survey tool'
+  summary: Forecast and observation research and evaluation survey tool
   description: |
     FOREST is a web viewer built on top of the bokeh Python package
     designed to offer a fast and simple way to explore geophysical
