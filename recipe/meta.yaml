@@ -24,6 +24,7 @@ requirements:
     - bokeh =1.4
     - datashader
     - xarray
+    - dataclasses # [py36]
 
 test:
   imports:
