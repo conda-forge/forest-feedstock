@@ -21,7 +21,9 @@ requirements:
   run:
     - python
     - iris
-    - bokeh
+    - bokeh=1.4
+    - datashader
+    - xarray
 
 test:
   imports:
