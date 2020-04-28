@@ -10,7 +10,7 @@ source:
   sha256: 0235c323c8218b3cf477983619cc0ff77104911a58f58dd63ef6aed1becb0f81
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<35]
 
@@ -21,7 +21,10 @@ requirements:
   run:
     - python
     - iris
-    - bokeh
+    - bokeh =1.4
+    - datashader
+    - xarray
+    - dataclasses # [py36]
 
 test:
   imports:
