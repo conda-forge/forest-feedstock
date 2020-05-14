@@ -18,10 +18,10 @@ requirements:
   build:
     - nodejs >=10.13
   host:
-    - python >=py36
+    - python
     - pip
   run:
-    - python
+    - python >=py36
     - iris
     - bokeh >=2.0.2
     - datashader
