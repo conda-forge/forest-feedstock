@@ -24,7 +24,6 @@ requirements:
     - python
     - iris
     - bokeh >=2.0.2
-    - nodejs >=10.13
     - datashader
     - xarray
     - dataclasses  # [py36]
