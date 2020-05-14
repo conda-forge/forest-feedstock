@@ -21,7 +21,7 @@ requirements:
   run:
     - python
     - iris
-    - bokeh =1.4
+    - bokeh >=2.0.2
     - nodejs >=10.13
     - datashader
     - xarray
