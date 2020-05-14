@@ -15,11 +15,11 @@ build:
   skip: true  # [py<35]
 
 requirements:
+  build:
+    - nodejs >=10.13
   host:
     - python
     - pip
-  build:
-    - nodejs >=10.13
   run:
     - python
     - iris
