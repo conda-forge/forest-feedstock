@@ -1,5 +1,5 @@
 {% set name = "forest" %}
-{% set version = "0.16.4" %}
+{% set version = "0.17.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/informatics-lab/forest/archive/v{{ version }}.tar.gz
-  sha256: 3f79373a75e10393cd37aa0057f04870316c329e8bc571231d1cb7fb9b511586
+  sha256: 5762d4901408c388b1b4d96da1a3444537efda5358e8be90cc2a020ad74b3014
 
 build:
   number: 0
