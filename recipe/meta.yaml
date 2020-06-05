@@ -10,7 +10,7 @@ source:
   sha256: fea306e389fb0b832bd41c6abcdeee785d4847dddce4ba76c40eb463d68296ed
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [win or py<35]
 
@@ -27,6 +27,7 @@ requirements:
     - datashader
     - xarray
     - dataclasses  # [py36]
+    - geojson
 
 test:
   imports:
