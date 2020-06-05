@@ -27,6 +27,7 @@ requirements:
     - datashader
     - xarray
     - dataclasses  # [py36]
+    - geojson
 
 test:
   imports:
