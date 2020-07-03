@@ -5,7 +5,7 @@ Home: http://github.com/informatics-lab/forest
 
 Package license: GPL-3.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Forecast and observation research and evaluation survey tool
 
