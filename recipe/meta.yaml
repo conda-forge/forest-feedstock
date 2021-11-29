@@ -1,5 +1,5 @@
 {% set name = "forest" %}
-{% set version = "0.20.7" %}
+{% set version = "0.20.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/informatics-lab/forest/archive/v{{ version }}.tar.gz
-  sha256: 3ec67925e825dac7986a7ce7bb2f6061fbd8e940c5fa2ba10c424512121eb194
+  sha256: f263321124b74e67b748ceb2f122694686de66e5e73fd2b1ee37fdda4dd2911d
 
 build:
   number: 0
@@ -22,12 +22,21 @@ requirements:
     - pip
   run:
     - python
-    - iris
-    - bokeh >=2.0.2
+    - iris <3
+    - bokeh
     - datashader
     - xarray
     - dataclasses  # [py36]
     - geojson
+    - pyyaml
+    - netCDF4
+    - scipy
+    - cftime
+    - pandas
+    - pygrib
+    - intake
+    - intake-esm
+    - h5netcdf
 
 test:
   imports:
