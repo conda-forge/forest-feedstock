@@ -1,5 +1,5 @@
 {% set name = "forest" %}
-{% set version = "0.20.9" %}
+{% set version = "0.20.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/informatics-lab/forest/archive/v{{ version }}.tar.gz
-  sha256: bd963daabe90d96e2b5e88bba88af226ff7932aafe6823119b7e77f17964fee2
+  sha256: c44c8d03884c931cca771deee3b9e42d9b13e773e8f4293bd90c92180fe94e1a
 
 build:
   number: 0
@@ -37,6 +37,7 @@ requirements:
     - intake
     - intake-esm
     - h5netcdf
+    - typer
 
 test:
   imports:
