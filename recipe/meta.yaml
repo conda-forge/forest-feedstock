@@ -37,6 +37,7 @@ requirements:
     - intake
     - intake-esm
     - h5netcdf
+    - typer
 
 test:
   imports:
