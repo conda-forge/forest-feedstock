@@ -45,8 +45,8 @@ test:
 
 about:
   home: http://github.com/informatics-lab/forest
-  license: GPL-3.0
-  license_family: GPL
+  license: BSD-3-Clause
+  license_family: BSD
   license_file: LICENSE
   summary: Forecast and observation research and evaluation survey tool
   description: |
