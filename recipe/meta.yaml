@@ -26,7 +26,7 @@ requirements:
     - bokeh
     - datashader
     - xarray
-    - dataclasses  # [py36]
+    - dataclasses
     - geojson
     - pyyaml
     - netCDF4
