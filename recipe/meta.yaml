@@ -13,16 +13,15 @@ build:
   noarch: python
   number: 1
   script: {{ PYTHON }} -m pip install . -vv
-  skip: true  # [py<35]
 
 requirements:
   build:
     - nodejs >=10.13
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - iris <3
     - bokeh
     - datashader
