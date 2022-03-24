@@ -10,23 +10,23 @@ source:
   sha256: 60f1980b97dbac153e5b31cc63040b34d39749a5068a56bbfa96ba5d98a5cc21
 
 build:
-  number: 0
+  noarch: python
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
-  skip: true  # [py<35]
 
 requirements:
   build:
     - nodejs >=10.13
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - iris <3
     - bokeh
     - datashader
     - xarray
-    - dataclasses  # [py36]
+    - dataclasses
     - geojson
     - pyyaml
     - netCDF4
@@ -45,8 +45,8 @@ test:
 
 about:
   home: http://github.com/informatics-lab/forest
-  license: GPL-3.0
-  license_family: GPL
+  license: BSD-3-Clause
+  license_family: BSD
   license_file: LICENSE
   summary: Forecast and observation research and evaluation survey tool
   description: |
