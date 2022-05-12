@@ -45,7 +45,7 @@ test:
   imports:
     - forest
   commands:
-    - forest -h
+    - forest --help
 
 about:
   home: http://github.com/informatics-lab/forest
