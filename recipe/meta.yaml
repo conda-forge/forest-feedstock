@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - forest = forest.cli.alternative:app
@@ -44,6 +44,8 @@ requirements:
 test:
   imports:
     - forest
+  commands:
+    - forest -h
 
 about:
   home: http://github.com/informatics-lab/forest
