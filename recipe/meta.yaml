@@ -11,8 +11,10 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
+  entry_points:
+    - forest = forest.cli.alternative:app
 
 requirements:
   build:
