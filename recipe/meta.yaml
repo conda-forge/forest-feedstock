@@ -1,5 +1,5 @@
 {% set name = "forest" %}
-{% set version = "0.20.14" %}
+{% set version = "0.20.15" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/informatics-lab/forest/archive/v{{ version }}.tar.gz
-  sha256: 60f1980b97dbac153e5b31cc63040b34d39749a5068a56bbfa96ba5d98a5cc21
+  sha256: 58e0693c2bc9fb73bc5a55c2186fb6403d6cd284d1a2f5adda434a9dfc051216
 
 build:
   noarch: python
-  number: 3
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - forest = forest.cli.alternative:app
