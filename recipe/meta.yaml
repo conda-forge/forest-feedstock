@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - forest = forest.cli.alternative:app
@@ -20,10 +20,10 @@ requirements:
   build:
     - nodejs >=10.13
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - iris <3
     - bokeh
     - datashader
@@ -42,6 +42,8 @@ requirements:
     - typer
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - forest
   commands:
